@@ -1,0 +1,19 @@
+.navbar-brand {
+  letter-spacing: 1px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.navbar-brand p {
+}
+
+.logo {
+  width: 90px;
+  aspect-ratio: 1;
+}
+
+span {
+  display: block;
+}

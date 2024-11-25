@@ -1,0 +1,26 @@
+<div
+  class="contenedor-especie container w-75 p-4 p-md-5 rounded-2 d-flex align-items-center"
+>
+  <div class="row align-items-center flex-column flex-lg-row">
+    <!-- Columna de Imagen -->
+    <div class="col-12 col-lg-6 text-center mb-4 mb-lg-0">
+      <img
+        class="especie-img img-fluid rounded"
+        [src]="especie.imagen"
+        alt="{{ especie.title }}"
+      />
+    </div>
+    <!-- Columna de Información -->
+    <div class="especie-info col-12 col-lg-6 text-center text-lg-start">
+      <h1 class="nombre-especie mt-md-2 mb-0">{{ especie.especie }}</h1>
+      <p class="nombre-cientifico mb-3">
+        {{ especie.nombre_cientifico }}
+      </p>
+      <p>
+        <span class="fw-semibold d-block">Generalidades:</span>
+        {{ especie.descripcion }}
+      </p>
+      <a href="/especies" class="btn mt-3">Ver más especies</a>
+    </div>
+  </div>
+</div>

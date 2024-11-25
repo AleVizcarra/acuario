@@ -1,0 +1,130 @@
+.home-container {
+  overflow-x: hidden;
+}
+header {
+  min-height: calc(100vh - 116px);
+  background-image: url(../../../assets/acuario-2.jpg);
+  background-position: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #00296b;
+}
+
+p {
+  font-family: "Poppins", serif;
+}
+
+.header-text {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.header-text p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.card-css {
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra tenue */
+  transition: transform 0.3s ease;
+  color: #fff;
+  min-height: 280px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-css h3 {
+  font-size: 2rem;
+}
+
+.card-css:hover {
+  transform: scale(1.05); /* Animación al pasar el mouse */
+}
+
+.blue-card {
+  background-color: #38a3a5;
+}
+
+.green-card {
+  background-color: #90be6d;
+}
+
+.yellow-card {
+  background-color: #f9c74f;
+}
+
+.card-img {
+  width: 100px;
+}
+
+.white-font {
+  color: #fff;
+}
+
+.segunda-seccion {
+  background-color: #3a6ea5;
+}
+
+.segunda-seccion h2 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.segunda-seccion h4 {
+  font-family: "Poppins", serif;
+}
+
+.img-segunda-seccion {
+  width: 100%;
+  /* max-width: 500px; */
+  object-fit: cover;
+}
+
+.cuarta-seccion {
+  background-color: #3a6ea5;
+}
+
+.cuarta-seccion .card {
+  border: none;
+  background-color: #48cae4;
+}
+
+.cuarta-seccion img {
+  height: 400px;
+  margin-top: 2rem;
+}
+
+.cuarta-seccion .btn {
+  background-color: #022e61;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+  .img-segunda-seccion {
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .header-text p {
+    font-size: 1.2rem;
+  }
+}

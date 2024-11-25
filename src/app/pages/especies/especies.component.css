@@ -1,0 +1,43 @@
+h1 {
+  font-family: "Bebas Neue", serif;
+  font-size: 3.5rem;
+  color: #00296b;
+  letter-spacing: 1px;
+}
+
+.especie-card {
+  min-height: 360px;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.especie-card:hover {
+  transform: scale(1.05); /* Animación al pasar el mouse */
+}
+
+.row {
+  gap: 2rem;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 216px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #6eccdf;
+}
+
+.card-title {
+  margin-bottom: auto;
+  font-family: "Bebas Neue", serif;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.card-btn {
+  background-color: #f3ba2b;
+  color: #fff;
+}

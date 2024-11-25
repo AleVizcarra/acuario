@@ -1,0 +1,11 @@
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", serif;
+  letter-spacing: 1px;
+}
+
+p,
+a {
+  font-family: "Poppins", serif;
+}
