@@ -1,0 +1,74 @@
+<!-- edit-movie.component.html -->
+<div
+  class="contenedor-especie container w-75 p-4 p-md-5 rounded-2 d-flex align-items-center"
+>
+  <div class="container bg-light p-4 rounded-2 col-12 col-lg-9">
+    <h2 class="text-center mb-2">Editar Película</h2>
+
+    <!-- Alerta de éxito -->
+    <div
+      *ngIf="showSuccessMessage"
+      class="alert alert-success alert-dismissible fade show"
+      role="alert"
+    >
+      Cambios guardados con éxito.
+    </div>
+
+    <form [formGroup]="especieForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="title" class="form-label fw-semibold">Especie:</label>
+        <input
+          id="especie"
+          formControlName="especie"
+          class="form-control"
+          placeholder="Ingresa el nombre de la especie"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="nombre_cientifico" class="form-label fw-semibold"
+          >Nombre científico:</label
+        >
+        <input
+          id="nombre_cientifico"
+          formControlName="nombre_cientifico"
+          class="form-control"
+          placeholder="Ingresa el nombre cientifico de la especie"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="synopsis" class="form-label fw-semibold"
+          >Descripción:</label
+        >
+        <textarea
+          id="descripcion"
+          formControlName="descripcion"
+          class="form-control"
+          rows="3"
+          placeholder="Ingresa la descripción de la especie"
+          resize="none"
+        ></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="cover" class="form-label fw-semibold">Imagen (URL):</label>
+        <input
+          id="imagen"
+          formControlName="imagen"
+          class="form-control"
+          placeholder="URL de la imagen de la especie"
+        />
+      </div>
+
+      <div class="d-flex">
+        <button type="submit" class="btn btn btn-success mt-2 me-2">
+          Guardar Cambios
+        </button>
+        <button type="button" class="btn btn-secondary mt-2" (click)="cancel()">
+          Cancelar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

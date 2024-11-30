@@ -1,13 +1,22 @@
 <div
-  class="contenedor-especie container w-75 p-4 p-md-5 rounded-2 d-flex align-items-center"
+  class="contenedor-especie container w-75 p-4 p-md-5 rounded-2 d-flex flex-column justify-content-start align-items-start"
 >
+  <!-- Alerta de eliminación -->
+  <div
+    *ngIf="showDeleteMessage"
+    class="alert alert-danger alert-dismissible fade show w-100"
+    role="alert"
+  >
+    Especie eliminada exitosamente.
+  </div>
+
   <div class="row align-items-center flex-column flex-lg-row">
     <!-- Columna de Imagen -->
     <div class="col-12 col-lg-6 text-center mb-4 mb-lg-0">
       <img
         class="especie-img img-fluid rounded"
         [src]="especie.imagen"
-        alt="{{ especie.title }}"
+        alt="{{ especie.especie }}"
       />
     </div>
     <!-- Columna de Información -->
@@ -20,7 +29,21 @@
         <span class="fw-semibold d-block">Generalidades:</span>
         {{ especie.descripcion }}
       </p>
-      <a href="/especies" class="btn mt-3">Ver más especies</a>
+      <div>
+        <button
+          class="btn btn-primary me-2 mt-2 mt-md-2"
+          (click)="editEspecie()"
+        >
+          Editar
+        </button>
+        <button
+          class="btn btn-danger me-2 mt-2 mt-md-2"
+          (click)="confirmDelete()"
+        >
+          Eliminar
+        </button>
+        <a href="/especies" class="btn btn-especies mt-2">Ver más especies</a>
+      </div>
     </div>
   </div>
 </div>
